@@ -1,0 +1,71 @@
+:root {
+  background: #FFF;
+  font-family: $font_body;
+  color: #222;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 60px 40px;
+}
+
+* {
+  outline: none;
+}
+
+a {
+  color: #E36049;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: rgba(#E36049, .8);
+}
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.display--inline {
+  display: inline;
+}
+
+.display--inline-block {
+  display: inline-block;
+}
+
+dfn[title] {
+  cursor: help;
+  opacity: 1 !important;
+}
+
+.center {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-name {
+  font-size: 5rem;
+  font-weight: 900;
+
+  &::before {
+    content: '';
+    height: 1em;
+    width: 1em;
+    display: block;
+    background: transparent url('assets/text-parser.svg') center center no-repeat;
+    background-size: contain;
+  }
+}

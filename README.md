@@ -1,4 +1,4 @@
-# text-parser-frontent
+# text-parser-frontend
 
 ## Project setup
 ```

@@ -1,0 +1,27 @@
+[class*=spacing--] {
+
+  > * {
+    margin-top: var(--spacing);
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  [class*=columns-] {
+    --columns-gutter: var(--spacing);
+  }
+
+  &.spacing--small {
+    --spacing: 5px;
+  }
+  
+  &.spacing--medium {
+    --spacing: 20px;
+  }
+  
+  &.spacing--large {
+    --spacing: 40px;
+  }
+}
+

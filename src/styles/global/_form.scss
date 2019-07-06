@@ -1,0 +1,55 @@
+label {
+  display: block;
+  font-weight: 700;
+}
+
+label + *,
+.description {
+  margin-top: .5rem;
+}
+
+.description {
+  font-size: .8rem;
+  font-style: italic;
+  opacity: .8;
+  line-height: 1.4em;
+}
+
+input,
+textarea,
+button,
+input[type="submit"],
+a.button {
+  padding: .4em 1em;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  border: 1px dashed rgba(#222, .4);
+  max-width: 100%;
+}
+
+.form-item--file-upload {
+  margin-bottom: -5px;
+
+  input {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+button,
+input[type="submit"],
+a.button {
+  background-color: #222;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #222;
+  line-height: normal;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    opacity: .6;
+  }
+}

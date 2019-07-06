@@ -1,0 +1,38 @@
+.modified-output {
+  --padding: 20px;
+  --border-color: rgba(0, 0, 0, .05);
+
+  border: 1px solid var(--border-color);
+  background-color: #efefef;
+  padding: var(--padding);
+  border-radius: .4em;
+  line-height: 1.4em;
+  font-size: .8rem;
+  text-align: center;
+
+  .modified-output--header {
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    margin: calc(var(--padding) * -1) calc(var(--padding) * -1) 0;
+    border-bottom: 1px solid var(--border-color);
+
+    > * {
+      font-size: .6rem;
+    }
+
+    > *:first-child {
+      margin-top: 0;
+    }
+  }
+
+  pre {
+    display: inline-block;
+    text-align: left;
+    font-family: monospace;
+  }
+
+  .highlight {
+    background-color: #ffffe5;
+  }
+}
