@@ -20,6 +20,10 @@ However, in order to modify the source and generate a new build, you'll want to 
 
 - https://cli.vuejs.org/guide/installation.html
 
+Part of that is NPM, which you should install first:
+
+- https://www.npmjs.com/get-npm
+
 Once that is taken care of you can use the following commands:
 
 - Project setup: `npm install`
