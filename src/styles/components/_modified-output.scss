@@ -14,7 +14,8 @@
     padding: var(--padding);
     display: flex;
     justify-content: space-evenly;
-    margin: calc(var(--padding) * -1) calc(var(--padding) * -1) 0;
+    margin: calc(var(--padding) * -1);
+    margin-bottom: var(--padding);
     border-bottom: 1px solid var(--border-color);
 
     > * {

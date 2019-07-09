@@ -4,7 +4,7 @@
     <h1 class="site-name">Text Parser</h1>
 
     <div class="legible">
-      <p>This is a small app built to demonstrate web technologies. It accepts a file upload (that ought to be text), finds the most commonly used word, and surrounds all of the instances with <em>foo</em> and <em>bar</em>. The app has a decoupled <a href="">frontend</a> and <a href="">backend</a>. Built with ❤ in Malmö by <a href="https://linusbohman.se">Linus Bohman</a>.</p>
+      <p>This is a small app built to demonstrate web technologies. It accepts a file upload (that ought to be text), finds the most commonly used word, and surrounds all of the instances with <em>foo</em> and <em>bar</em>. The app has a decoupled <a href="https://github.com/bohman/text-parser-frontend">frontend</a> and <a href="https://github.com/bohman/text-parser-backend">backend</a>. Built with ❤ in Malmö by <a href="https://linusbohman.se">Linus Bohman</a>.</p>
     </div>
 
     <form v-if="!analysis.analysis" class="parse-form" method="post" :action="backendPostUrl" enctype="multipart/form-data" @submit.prevent="submit()" ref="form">
@@ -47,7 +47,7 @@ import Error from './components/Error.vue'
 let methods = {};
 let computed = {};
 
-methods.submit = async function(form) {
+methods.submit = async function() {
   this.loading = true;
   let formData = new FormData(this.$refs.form);
   const response = await Axios.post(this.backendPostUrl, formData);
@@ -88,7 +88,7 @@ export default {
   computed: computed,
   data: function() {
     return {
-      backendUrl: process.env.VUE_APP_BACKEND_POST_URL,
+      backendUrl: process.env.VUE_APP_BACKEND_URL,
       backendPostUrl: process.env.VUE_APP_BACKEND_POST_URL,
       analysis: {},
       error: '',
