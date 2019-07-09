@@ -22,38 +22,19 @@ However, in order to modify the source and generate a new build, you'll want to 
 
 Once that is taken care of you can use the following commands:
 
-Project setup:
-```
-npm install
-```
-
-Compiles and hot-reloads for development:
-```
-npm run serve
-```
-
-Compiles and minifies for production:
-```
-npm run build
-```
-
-Run your tests:
-```
-npm run test
-```
-
-Lints and fixes files:
-```
-npm run lint
-```
+- Project setup: `npm install`
+- Compiles and hot-reloads for development: `npm run serve`
+- Compiles and minifies for production: `npm run build`
+- Run your tests: `npm run test`
+- Lints and fixes files: `npm run lint`
 
 ## Improvements
 
-It's easy to be critical of your own work, especially if it's a small demonstration like this. If I were to revisit this frontend again I would probably fokus on the following areas:
+It's easy to be critical of your own work, especially if it's a small demonstration like this. If I were to revisit this frontend again I would probably focus on the following areas:
 
 - Styling and typography. For a text parsing app, the general readability and styling are woefully underworked.
-- Features. We could highlight so much more fun things, like show hidden characters in the processed text.
-- Code. We could refactor and make everything much tidier - we are a bit lacking in the structure department. To be honest, doing it with a feature set as small as this would probably be unnecessary complication, but if the app would grow it would be critical.
+- Features. We could do so many more fun things, like show hidden characters in the processed text.
+- Code. We could refactor and make everything much tidier - we are a bit lacking in the structure department. To be honest, doing it with a feature set as small as this would probably be an unnecessary complication, but if the app would grow it would be critical.
 - Tests. There are none right now.
 
 ## Wait, who are you again?
